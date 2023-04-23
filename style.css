@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --COLOR-ONE: #272D4A;
+    --COLOR-TWO: #FFF;
+    --COLOR-THREE: #000;
+    --COLOR-FOUR: #C90A0A;
+    --COLOR-FIVE: #EBDEA8;
+    --COLOR-SIX: #191e38;
+}
+.container{
+        display: grid;
+        place-content: center center;
+        width: 100%;
+        min-height: 100vh;
+        background-color: var(--COLOR-ONE);     
+        padding: 2em;
+}
+.calculator{
+    display: grid;
+    grid-template-rows: 0.2fr 0.4fr;
+    row-gap: 3rem;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    box-shadow: 3px 3px #fff;
+}
+
+
+.cancel{
+    width: 75%;
+}
+.cancel img{
+    width: 100%;
+}
+.display{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+}
+#display-el{
+    width: 80%;
+    padding: 0.3em;
+    background-color: black;
+    justify-self: center;
+    border-radius: 30px;
+    border: 2px solid white;
+    overflow-x: visible;
+    margin-top: 1rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    direction: ltr;
+    margin: 0 auto;
+    text-align: right;
+    
+}
+
+.buttonPlace{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 2em;
+    justify-content: center;
+    background-color: var(--COLOR-SIX);
+    border-radius: 30px;
+    
+}
+.cancelImg{
+    width: 20%;
+}
+ .row{
+    display: flex;
+    justify-content: space-around;
+} 
+
+button{
+    width: 20%;
+    padding: 0.6em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    border-radius: 20px;
+}
+#All-clear{
+    font-size: 0.75rem;
+    background-color: var(--COLOR-FOUR);
+}
